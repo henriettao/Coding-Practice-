@@ -70,7 +70,7 @@ public class LinkedList
       }
       static int countNodes(Node *head)
       {
-        int count =0; 
+        int count = 0; 
         Node current = head 
 
         while(current.next!= null)
@@ -82,22 +82,6 @@ public class LinkedList
       }
     }
 
-  static void Main ()
-  {
-        
-     Node head = new Node (4);
-     Node nodeB= new Node (2);
-     Node nodeC= new Node (3);
-     Node nodeD= new Node (10);
-     Node nodeE= new Node (2);
-
-     head.next=nodeB; 
-     nodeB.next=nodeC; 
-     nodeC.next=nodeD; 
-     nodeD.next=nodeE; 
-      
-  }
-  
 }    
    // test method for generalizedGCD 
 
