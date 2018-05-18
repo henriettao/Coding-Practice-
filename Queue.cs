@@ -32,7 +32,7 @@ public static class Queue
 
 		public void Add(int data)
 		{
-			// add to theh tail
+			// add to the tail
 			Node node = new Node(data)
 			if (tail! = null)
 			{
