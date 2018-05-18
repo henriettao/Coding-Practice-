@@ -23,7 +23,7 @@ public class LinkedList
           return;
         }
         Node current = head; 
-        while (current,nect!- null)
+        while (current.next!- null)
         {
           current= current.next; 
         }
@@ -36,7 +36,7 @@ public class LinkedList
       {
         if (head == null)
         {
-          head = new Node (data)
+          head = new Node (data);
         }
 
         Node temp = new Node(data);
@@ -55,7 +55,7 @@ public class LinkedList
         if (head.data == data)
         {
           head = head.next;
-          return
+          return;
         }
 
         Node current = head; 
@@ -68,15 +68,15 @@ public class LinkedList
           current= current.next;
         }
       }
-      static int countNodes(Node *head)
+      static int countNodes(Node head)
       {
         int count = 0; 
-        Node current = head 
+        Node current = head; 
 
         while(current.next!= null)
         {
           current = current.next;
-          count++
+          count++;
         }
         return count;
       }
