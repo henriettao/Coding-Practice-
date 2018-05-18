@@ -36,7 +36,7 @@ public class LinkedList
       {
         head = new Node(data);
         head.next = null;
-      
+
       }
       else
       {
@@ -52,7 +52,7 @@ public class LinkedList
 
         current.next = toAdd; 
      }
-      
+
     }
   // adding to the start of the list 
     public void Prepend(object data)
@@ -69,7 +69,6 @@ public class LinkedList
       head = temp;
 
     }
-
     public void Delete (object data)
     {
       if (head == null)
@@ -127,7 +126,7 @@ public class LinkedList
 
     }
   }
-   // test method for generalizedGCD 
+   
 
 
 
