@@ -97,7 +97,7 @@ public class LinkedList
 
     }
 
-    public int countNodes()
+    public int CountNodes()
     {
       int count =0; 
       Node current = head; 
@@ -130,7 +130,7 @@ public class LinkedList
       myList.Delete(35);
 
       
-      int count = myList.countNodes();
+      int count = myList.CountNodes();
       Console.WriteLine("Number of elements in the linked list is  {0}", count);
       myList.Print();
 
