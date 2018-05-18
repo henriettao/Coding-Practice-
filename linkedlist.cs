@@ -1,4 +1,3 @@
-
 // OOP practice 
 using System; 
 using System.Collections.Generic;
@@ -98,7 +97,7 @@ public class LinkedList
       int count =0; 
       Node current = head; 
 
-      while(current.next!= null)
+      while(current!= null)
       {
         current = current.next;
         count++;
@@ -117,7 +116,7 @@ public class LinkedList
       myList.Append(17);
       myList.Append(18);
 
-      myList.Print(); 
+      
       myList.Prepend(2);
 
       myList.Print();
@@ -127,6 +126,3 @@ public class LinkedList
     }
   }
    
-
-
-
