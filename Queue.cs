@@ -42,7 +42,7 @@ public static class Queue
 
 			if (head== null)
 			{
-				head= node;
+			   head= node;
 			}
 
 		}
@@ -53,7 +53,7 @@ public static class Queue
 			head = head.next; 
 			if (head == null)
 			{
-				tail = null; 
+			  tail = null; 
 			} 
 			return data;
 		}
