@@ -11,6 +11,7 @@ public class Node
   public Node (object data)
     {
       this.data = data;
+      this.next = null;
     } 
 }
 
@@ -82,11 +83,10 @@ public class LinkedList
       if (head.data == data)
       {
         head = head.next;
-        return;
       }
 
       Node current = head; 
-      while (current.next != null)
+      while (current.next!= null)
       {
         if (current.next.data == data)
         {
@@ -96,6 +96,7 @@ public class LinkedList
       }
 
     }
+
     public int countNodes()
     {
       int count =0; 
@@ -110,6 +111,7 @@ public class LinkedList
     }
     
   }
+  
 
   class Program 
   {
@@ -121,10 +123,11 @@ public class LinkedList
       myList.Append(1);
       myList.Append(17);
       myList.Append(18);
-
       
       myList.Prepend(2);
-
+      myList.Prepend(34);
+      myList.Append(35);
+      myList.Delete(35);
 
       
       int count = myList.countNodes();
