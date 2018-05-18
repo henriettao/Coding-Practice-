@@ -28,13 +28,11 @@ int printUnion(int arr1[], int arr2[], int m, int n)
 	while(i < m)
 	{
 		printf("%d,", arr1[i++]);
-
 	}
 
 	while(j < n)
 	{
-		printf("%d,", arr2[j++]);
-		
+		printf("%d,", arr2[j++]);	
 	}
 	printf("\n");
 	
@@ -69,10 +67,13 @@ int main()
 	int n = sizeof(arr2)/ sizeof (arr2[0]);
 
 	printf("%d, %d\n", m,n);
-
+	printf("The Union of the Arrays \n");
 	printUnion(arr1, arr2, m,n);
+	printf("\n");
 
+	printf("The Intersection of the Arrays \n");	
 	printIntersection(arr1, arr2, m,n);
+	printf("\n");
 	return 0;
 
 
