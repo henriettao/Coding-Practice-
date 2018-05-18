@@ -9,7 +9,7 @@ public class Node
   public Node next;
 
 
-  Node (object data)
+  public Node (object data)
     {
       this.data = data;
     } 
