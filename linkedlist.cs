@@ -53,7 +53,11 @@ public class LinkedList
      }
 
     }
-  // adding to the start of the list 
+  // adding to the start of the list
+  public bool IsEmpty()
+  {
+    return head == null;
+  } 
     public void Prepend(object data)
     {
       if (head == null)
@@ -112,6 +116,8 @@ public class LinkedList
     static void Main()
     {
       LinkedList myList = new LinkedList();
+    
+
       myList.Append(1);
       myList.Append(17);
       myList.Append(18);
@@ -119,9 +125,11 @@ public class LinkedList
       
       myList.Prepend(2);
 
-      myList.Print();
+
+      
       int count = myList.countNodes();
       Console.WriteLine("Number of elements in the linked list is  {0}", count);
+      myList.Print();
 
     }
   }
